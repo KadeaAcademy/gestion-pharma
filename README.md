@@ -23,3 +23,7 @@ yarn
 ## Run
 
 yarn dev
+
+## Doc
+
+https://docs.google.com/presentation/d/1zHPHVUWYTTJnXu80TIqaiHnzog1fjPC0j-9xTh5irlI/edit?usp=sharing

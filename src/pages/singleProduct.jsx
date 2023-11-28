@@ -6,10 +6,11 @@ function SingleProduct() {
 
     const {id} = useParams();
 
-    const product = ProductService.getProducts().find((e) => e.id === id);
+    const data = ProductService.getProducts();
+
+    const product = data.find((e) => e.id === id);
 
     return <div>
-        <h1>Single Product Page</h1>
         <ProductPreview product={product} seeMore={true}></ProductPreview>
     </div>
 }

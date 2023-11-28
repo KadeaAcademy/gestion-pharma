@@ -8,9 +8,8 @@ function ProductPreview({product, seeMore}) {
             seeMore ?
                 <p>{product.description}</p>
                 :
-                <Link to={`/single-product/${product.id}`}>Voir plus</Link>
+                <Link to={`/products/${product.id}`}>Voir plus</Link>
         }
     </div>
 }
-
 export default ProductPreview;

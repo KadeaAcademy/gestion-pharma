@@ -5,20 +5,37 @@ import Login from "./pages/login.jsx";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Home from "./pages/home.jsx";
 import SingleProduct from "./pages/singleProduct.jsx";
+import About from "./pages/about.jsx";
+import Products from "./pages/products.jsx";
+import ProductsList from "./pages/productsList.jsx";
 
 const router = createBrowserRouter(
     [
         {
             path: "/",
-            element: <Home></Home>
+            element: <Login/>
         },
         {
-            path: "/login",
-            element: <Login></Login>
+            path: "/home",
+            element: <Home/>
         },
         {
-            path: "/single-product/:id",
-            element: <SingleProduct></SingleProduct>
+            path: "/about",
+            element: <About/>
+        },
+        {
+            path: "/products",
+            element: <Products/>,
+            children:[
+                {
+                    path:"",
+                    element: <ProductsList/>
+                },
+                {
+                    path:":id",
+                    element: <SingleProduct/>
+                }
+            ]
         }
     ]
 )

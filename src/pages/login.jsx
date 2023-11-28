@@ -1,10 +1,18 @@
-import LoginButton from "../components/loginButton.jsx";
+import {useNavigate} from "react-router-dom";
 
 function Login() {
 
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate('/home');
+    }
+
     return <div>
         <h1>Login Page</h1>
-        <LoginButton></LoginButton>
+
+        <button onClick={handleClick}>
+            Connexion
+        </button>
     </div>
 }
 

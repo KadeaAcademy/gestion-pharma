@@ -5,17 +5,19 @@ function ProductsList() {
 
     const data = ProductService.getProducts();
 
-    return <div>
-        <ul>
-            {
-                data.map((e) =>
-                    <li>
-                        <ProductPreview product={e} seeMore={false}></ProductPreview>
-                    </li>
-                )
-            }
-        </ul>
-    </div>
+    return (
+        <div>
+            <ul>
+                {
+                    data.map((e) =>
+                        <li>
+                            <ProductPreview product={e} seeMore={false}></ProductPreview>
+                        </li>
+                    )
+                }
+            </ul>
+        </div>
+    );
 }
 
 export default ProductsList;

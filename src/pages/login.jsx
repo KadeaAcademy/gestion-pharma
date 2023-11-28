@@ -7,13 +7,15 @@ function Login() {
         navigate('/home');
     }
 
-    return <div>
-        <h1>Login Page</h1>
+    return (
+        <div>
+            <h1>Login Page</h1>
 
-        <button onClick={handleClick}>
-            Connexion
-        </button>
-    </div>
+            <button onClick={handleClick}>
+                Connexion
+            </button>
+        </div>
+    );
 }
 
 export default Login;

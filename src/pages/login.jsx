@@ -8,13 +8,13 @@ function Login() {
     }
 
     return (
-        <div>
+        <>
             <h1>Login Page</h1>
 
             <button onClick={handleClick}>
                 Connexion
             </button>
-        </div>
+        </>
     );
 }
 

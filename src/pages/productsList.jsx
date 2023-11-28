@@ -6,7 +6,7 @@ function ProductsList() {
     const data = ProductService.getProducts();
 
     return (
-        <div>
+        <>
             <ul>
                 {
                     data.map((e) =>
@@ -16,7 +16,7 @@ function ProductsList() {
                     )
                 }
             </ul>
-        </div>
+        </>
     );
 }
 

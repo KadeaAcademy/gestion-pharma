@@ -11,9 +11,9 @@ function SingleProduct() {
     const product = data.find((e) => e.id === id);
 
     return (
-        <div>
+        <>
             <ProductPreview product={product} seeMore={true}></ProductPreview>
-        </div>
+        </>
     );
 }
 
